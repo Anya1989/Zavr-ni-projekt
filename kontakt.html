@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anja Matesic">
+    <meta name="keywords" content="HTML, CSS, pingvini">
+    <meta name="description" content="Projektni zadatak - pingvini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posvoji pingvina</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="banner"></div>
+
+    <nav>
+        <a href="index.html">O nama</a> |
+        <a href="zanimljivosti.html">Zanimljivosti</a> |
+        <a href="kontakt.html">Kontakt</a> |
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <main>
+        <h1>Lokacija</h1>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91631.80915200905!2d15.178691797835354!3d44.13505735598967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa62d2c0b88f%3A0x12323e1c13f40784!2sZadar!5e0!3m2!1shr!2shr!4v1642626699171!5m2!1shr!2shr"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">Ime</label>
+                <input type="text" id="fname" name="firstname" placeholder="Vaše ime...">
+
+                <label for="lname">Prezime</label>
+                <input type="text" id="lname" name="lastname" placeholder="Vaše prezime...">
+
+
+                <label for="lemail">Upišite svoju email adresu:</label>
+                <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" type="email" id="lemail" name="Email"
+                    placeholder="imeprezime@mail.com">
+
+
+                <label for="country">Država</label>
+                <select id="country" name="country">
+                    <option value="croatia">Hrvatska</option>
+                    <option value="slovenija">Slovenija</option>
+                    <option value="bih">Bosna i Hercegovina</option>
+                </select>
+
+                <label for="subject">Napomena</label>
+                <textarea id="subject" name="subject" placeholder="Napišite poruku ovdje..."
+                    style="height:200px"></textarea>
+
+                <input type="submit" value="Pošalji">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <small>Društvene mreže </small>
+        <ul class="drustvene_mreze">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="copyright" Copyright>&copy; 2022 Anja Matešić <a href="https://github.com/">
+                <i class="fa fa-github" aria-hidden="true"></i></a></p>
+    </footer>
+
+</body>
+
+</html>
